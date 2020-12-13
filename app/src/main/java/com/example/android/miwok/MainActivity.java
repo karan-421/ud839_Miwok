@@ -16,6 +16,7 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,6 +24,8 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.numbers);
+
+
+        TextView numbers = (TextView)findViewById(R.id.numbers);
 
         // Set a click listener on that View
         numbers.setOnClickListener(new OnClickListener() {
